@@ -1,0 +1,16 @@
+h1 {
+	color: #8860D0;
+	text-shadow: 1px 1px 0 #5AB9EA;
+	##5680E9
+	size: 30;
+	text-align: center;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+}
+
+body {
+	background: linear-gradient(to bottom right, #C1C8E4, #84CEEB);
+}
