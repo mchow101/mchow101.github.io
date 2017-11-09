@@ -1,9 +1,15 @@
 h1 {
 	color: #C05640;
-	text-shadow: 1px 1px 0 #EDD170;
+	text-shadow: 3px 2px 0 #EDD170;
 	##5680E9
-	size: 30;
+	font-family: Georgia;
+	font-size: 50px;
 	text-align: center;
+}
+
+p {
+	font-family: Georgia;
+	font-size: 30px;
 }
 
 img {
