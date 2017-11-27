@@ -1,34 +1,5 @@
-h1 {
-	color: #C05640;
-	text-shadow: 3px 2px 0 #EDD170;
-	font-family: Georgia;
-	font-size: 50px;
-	text-align: center;
-}
-
-p {
-	font-family: Georgia;
-	font-size: 30px;
-}
-
-img.left {
-	width: 20%;
-	padding-left: 10%;
-}
-
-img.centerLeft {
-	width: 20%;
-}
-
-img.centerRight {
-	width: 20%;
-}
-
-img.right {
-	width: 20%;;
-}
-
-html, body {
-	background: linear-gradient(to bottom right, #1ECFD6, #003D73);
-	background-height: 200%;
+#myCanvas {
+	width: 400px;
+	height: 400px;
+	border: solid 1px black;
 }
