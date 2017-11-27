@@ -3,4 +3,4 @@
 SnapScape:
 Personal Photography Blog
 
-mchow101.github.io
+http://mchow101.github.io
