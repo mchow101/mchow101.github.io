@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Dice Game</title>
+		<script type="text/javascript">
+			var cheight = 400;
+			var cwidth = 400;
+			var dicex;
+			var dicey = 50;
+			var dicewidth = 100;
+			var diceheight = 100;
+			var dotrad = 6;
+			var ctx;
+			var firstturn = true;
+			var point;
+			var sum;
+			console.log('test');
+
+			function setPoint(num) {
+				switch(num) {
+					case 1: point = 1; break;
+					case 2: point = 2; break;
+					case 3: point = 3; break;
+					case 4: point = 4; break;
+					case 5: point = 5; break;
+					case 6: point = 6; break;
+					case 7: point = 7; break;
+					case 8: point = 8; break;
+					case 9: point = 9; break;
+					case 10: point = 10; break;
+					case 11: point = 11; break;
+					case 12: point = 12; break;
+				}
+				switch(sum) {
+					case point:
+						if(firstturn === true) {
+							document.f.outcome.value = "You win!";
+							break;
+						}
+						else {
+							document.f.outcome.value = "You win!";
+							firstturn = true;
+							break;
+						}
+					default:
+						firstturn = false;
+						document.f.outcome.value = "Try again.";
+						firstturn = true;
+						break;
+				}
+			}
+
+			function throwdice() {
+				console.log('throwdice');
+				document.f.outcome.value = " ";
+				dicex = 50;
+				var ch = 1 + Math.floor(Math.random()*6);
+				sum = ch;
+				drawface(ch);
+				dicex = 200;
+				ch = 1 + Math.floor(Math.random()*6);
+				sum += ch;
+				drawface(ch);
+			}
+
+			function drawface(n) {
+				console.log('drawface worked');
+				ctx = document.getElementById('canvas').getContext('2d');
+				ctx.lineWidth = 5;
+				ctx.clearRect(dicex, dicey, dicewidth, diceheight);
+				ctx.strokeRect(dicex, dicey, dicewidth, diceheight);
+				ctx.fillStyle = "#009966";
+				switch(n) {
+					case 1: draw1(); break;
+					case 2: draw2(); break;
+					case 3: draw2(); draw1(); break;
+					case 4: draw4(); break;
+					case 5: draw4(); draw1(); break;
+					case 6: draw4(); draw2mid(); break;
+				}
+			}
+
+			function draw1() {
+				console.log('draw1 function');
+				var dotx =  dicex + .5*dicewidth; 
+				var doty = dicey + .5*diceheight;
+				ctx.beginPath();
+				ctx.arc(dotx, doty, dotrad, 0, Math.PI*2, true);
+				ctx.closePath();
+				ctx.fill();
+			}
+
+			function draw2() {
+				var dotx =  dicex + 3*dotrad; 
+				var doty = dicey + 3*dotrad;
+				ctx.beginPath();
+				ctx.arc(dotx, doty, dotrad, 0, Math.PI*2, true);
+				dotx = dicex + dicewidth - 3*dotrad;
+				doty = dicey + diceheight - 3*dotrad;
+				ctx.arc(dotx, doty, dotrad, 0, Math.PI*2, true);
+				ctx.closePath();
+				ctx.fill();
+			}
+
+			function draw4() {
+				var dotx =  dicex + 3*dotrad; 
+				var doty = dicey + 3*dotrad;
+				ctx.beginPath();
+				ctx.arc(dotx, doty, dotrad, 0, Math.PI*2, true);
+				dotx = dicex + dicewidth - 3*dotrad;
+				doty = dicey + diceheight - 3*dotrad;
+				ctx.arc(dotx, doty, dotrad, 0, Math.PI*2, true);
+				ctx.closePath();
+				ctx.fill();
+				ctx.beginPath();
+				dotx =  dicex + dicewidth - 3*dotrad; 
+				doty = dicey + 3*dotrad;
+				ctx.arc(dotx, doty, dotrad, 0, Math.PI*2, true);
+				dotx = dicex + 3*dotrad;
+				doty = dicey + diceheight - 3*dotrad;
+				ctx.arc(dotx, doty, dotrad, 0, Math.PI*2, true);
+				ctx.closePath();
+				ctx.fill();
+			}
+
+			function draw2mid() {
+				var dotx = dicex + 3*dotrad;
+				var doty = dicey + .5*diceheight;
+				ctx.beginPath();
+				ctx.arc(dotx, doty, dotrad, 0, Math.PI*2, true);
+				dotx = dicex + dicewidth - 3*dotrad;
+				ctx.arc(dotx, doty, dotrad, 0, Math.PI*2, true);
+				ctx.closePath();
+				ctx.fill();
+			}
+		</script>
+	</head>
+	<body>
+		<heading>Dice Game!</heading>
+		<br/>
+		<canvas id="canvas" width="400" height="300">
+			Your browser doesn't support the HTML5 element canvas.
+		</canvas>
+		<br/>
+		<button onClick="throwdice();">Throw Dice</button>
+		<br/> <br/>
+		<form name="f">
+			Outcome: <input name="outcome" value=" "/>
+		</form>
+		<br/>
+		<button onClick="setPoint(2)">২</button>
+		<button onClick="setPoint(3)">৩</button>
+		<button onClick="setPoint(4)">৪</button>
+		<button onClick="setPoint(5)">৫</button>
+		<button onClick="setPoint(6)">৬</button>
+		<button onClick="setPoint(7)">৭</button>
+		<button onClick="setPoint(8)">৮</button>
+		<button onClick="setPoint(9)">৯</button>
+		<button onClick="setPoint(10)">১০</button>
+		<button onClick="setPoint(11)">১১</button>
+		<button onClick="setPoint(12)">১২</button>
+	</body>
+</html>
