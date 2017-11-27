@@ -1,3 +1,6 @@
 # mchow101.github.io
 
-SnapScape
+SnapScape:
+Personal Photography Blog
+
+mchow101.github.io
