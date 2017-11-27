@@ -1,7 +1,6 @@
 h1 {
 	color: #C05640;
 	text-shadow: 3px 2px 0 #EDD170;
-	##5680E9
 	font-family: Georgia;
 	font-size: 50px;
 	text-align: center;
@@ -12,16 +11,24 @@ p {
 	font-size: 30px;
 }
 
-img {
-	width: 200px;
+img.left {
+	width: 20%;
+	padding-left: 10%;
 }
 
-html {
-	height: 100%;
+img.centerLeft {
+	width: 20%;
 }
 
-body {
-	height: 100%;
+img.centerRight {
+	width: 20%;
+}
+
+img.right {
+	width: 20%;;
+}
+
+html, body {
 	background: linear-gradient(to bottom right, #1ECFD6, #003D73);
-	background-repeat: no-repeat;
+	background-height: 200%;
 }
