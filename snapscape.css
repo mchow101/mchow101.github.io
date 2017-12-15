@@ -4,6 +4,7 @@ h1 {
 	font-family: Georgia;
 	font-size: 50px;
 	text-align: center;
+	background: linear-gradient(to bottom right, #003D73, #1ECFD6);
 }
 
 p {
@@ -11,21 +12,15 @@ p {
 	font-size: 30px;
 }
 
-img.left {
-	width: 20%;
-	padding-left: 10%;
+.grid {
+	padding: 0;
+    display: block;
+    float: left;
+    width: 25%;
 }
 
-img.centerLeft {
-	width: 20%;
-}
-
-img.centerRight {
-	width: 20%;
-}
-
-img.right {
-	width: 20%;;
+.grid img:hover {
+    transition: transform 0.5s, opacity 0.5s;
 }
 
 html, body {
