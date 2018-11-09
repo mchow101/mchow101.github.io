@@ -1,16 +1,5 @@
 # mchow101.github.io
 
-## SnapScape:
-Personal photography blog
+An overview of some of my projects to date.
 
-http://mchow101.github.io/SnapScape
-
-## Gravity: 
-Gravity simulation with bouncing balls
-
-http://mchow101.github.io/Gravity
-
-## Bengali Dice Games:
-Educational numbers game in Bengali
-
-http://mchow101.github.io/DiceGame
+https://mchow101.github.io
