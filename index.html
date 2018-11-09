@@ -29,7 +29,13 @@
       position: absolute;
       width: 100%;
       height: 100%;
+      opacity: 0.60;
+      object-fit:contain;
+    }
+
+    .hover-opacity:hover {
       object-fit: cover;
+      opacity: 1
     }
   </style>
 </head>
@@ -60,12 +66,12 @@
     </div>
     <!--
   <div class="w3-panel w3-large">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <i class="fa fa-facebook-official hover-opacity"></i>
+    <i class="fa fa-instagram hover-opacity"></i>
+    <i class="fa fa-snapchat hover-opacity"></i>
+    <i class="fa fa-pinterest-p hover-opacity"></i>
+    <i class="fa fa-twitter hover-opacity"></i>
+    <i class="fa fa-linkedin hover-opacity"></i>
   </div>
 -->
   </nav>
@@ -80,7 +86,7 @@
     <!-- Header -->
     <header id="portfolio">
       <a href="#">
-        <img src="src/img/icon.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity">
+        <img src="src/img/icon.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large hover-opacity">
       </a>
       <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
         <i class="fa fa-bars"></i>
@@ -106,7 +112,7 @@
       <div class="w3-third w3-container w3-margin-bottom">
         <a href="index.html">
           <div class="projects">
-            <img src="src/img/thissite.PNG" alt="Screenshot" style="width:100%" class="w3-hover-opacity">
+            <img src="src/img/thissite.PNG" alt="Screenshot" style="width:100%" class="hover-opacity">
           </div>
         </a>
         <div class="w3-container w3-white">
@@ -121,7 +127,7 @@
       <div class="w3-third w3-container w3-margin-bottom">
         <a href="http://www.breakerbotsdev.com">
           <div class="projects">
-            <img src="src/img/breakerbots.PNG" alt="5104 Logo" style="width:100%" class="w3-hover-opacity">
+            <img src="src/img/breakerbots.PNG" alt="5104 Logo" style="width:100%" class="hover-opacity">
           </div>
           <div class="w3-container w3-white">
             <p>
@@ -134,7 +140,7 @@
       <div class="w3-third w3-container w3-margin-bottom">
         <a href="src/SnapScape/SnapScape.html">
           <div class="projects">
-            <img src="src/SnapScape/img1.jpg" alt="Photo" style="width:100%;" class="w3-hover-opacity">
+            <img src="src/SnapScape/img1.jpg" alt="Photo" style="width:100%;" class="hover-opacity">
           </div>
           <div class="w3-container w3-white">
             <p>
@@ -151,7 +157,7 @@
       <div class="w3-third w3-container w3-margin-bottom">
         <a href="http://www.github.com/mchow101/apcs-final-project">
           <div class="projects">
-            <img src="src/img/superfungame.PNG" alt="Super Fun Game" style="width:100%" class="w3-hover-opacity">
+            <img src="src/img/superfungame.PNG" alt="Super Fun Game" style="width:100%" class="hover-opacity">
           </div>
           <div class="w3-container w3-white">
             <p>
@@ -165,7 +171,7 @@
       <div class="w3-third w3-container w3-margin-bottom">
         <a href="src/DiceGame/DiceGame.html">
           <div class="projects">
-            <img src="src/img/dice.PNG" alt="Dice" style="width:100%" class="w3-hover-opacity">
+            <img src="src/img/dice.PNG" alt="Dice" style="width:100%" class="hover-opacity">
           </div>
           <div class="w3-container w3-white">
             <p>
@@ -177,7 +183,7 @@
       </div>
       <div class="w3-third w3-container">
         <div class="projects">
-          <img src="src/img/march.PNG" alt="March Madness" style="width:100%" class="w3-hover-opacity">
+          <img src="src/img/march.PNG" alt="March Madness" style="width:100%" class="hover-opacity">
         </div>
         <div class="w3-container w3-white">
           <p>
@@ -218,7 +224,8 @@
       <h4>
         <b>About Me</b>
       </h4>
-      <p>I am a High School Student and the Programming Lead on FRC Team 5104. I have experience mainly in Java, Python, HTML, CSS, and JavaScript.</p>
+      <p>I am a High School Student and the Programming Lead on FRC Team 5104. I have experience mainly in Java, Python, HTML,
+        CSS, and JavaScript.</p>
       <hr>
 
       <!-- Progress bars / Skills 
@@ -247,7 +254,7 @@
     <h4>How much I charge</h4>
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity hover-opacity-off">
           <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
           <li class="w3-padding-16">Web Design</li>
           <li class="w3-padding-16">Photography</li>
@@ -264,7 +271,7 @@
       </div>
       
       <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity hover-opacity-off">
           <li class="w3-teal w3-xlarge w3-padding-32">Pro</li>
           <li class="w3-padding-16">Web Design</li>
           <li class="w3-padding-16">Photography</li>
@@ -281,7 +288,7 @@
       </div>
       
       <div class="w3-third">
-        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+        <ul class="w3-ul w3-border w3-white w3-center w3-opacity hover-opacity-off">
           <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
           <li class="w3-padding-16">Web Design</li>
           <li class="w3-padding-16">Photography</li>
@@ -310,7 +317,7 @@
               <i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i>
             </p>
             <p>
-              <a href="mailto:mintychocolate101@gmail.com">mintychocolate101@gmail.com</a>
+              <a href="mailto:mintychocolate101@gmail.com">mintychocolate101 at gmail.com</a>
             </p>
           </div>
           <div class="w3-third w3-teal">
@@ -391,7 +398,7 @@
 -->
 
         <div class="w3-black w3-center w3-padding-24">Template from
-          <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a>
+          <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="hover-opacity">w3.css</a>
         </div>
 
         <!-- End page content -->

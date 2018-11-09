@@ -4,87 +4,105 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="icon.png">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../css/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link href="https://fonts.googleapis.com/css?family=Meddon|Monsieur+La+Doulaise|Mr+De+Haviland" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {font-family: "Montserrat", sans-serif; background: #cbb887}
-/* h1 {font-family: 'Monsieur La Doulaise', cursive} */
-h1 {font-family: "Meddon", cursive}
-img {margin-bottom: -7px}
-.w3-row-padding img {margin-bottom: 12px}
+	body {
+		font-family: "Montserrat", sans-serif;
+		background: #cbb887
+	}
+
+	/* h1 {font-family: 'Monsieur La Doulaise', cursive} */
+
+	h1 {
+		font-family: "Meddon", cursive
+	}
+
+	img {
+		margin-bottom: -7px;
+	}
+
+	.w3-row-padding img {
+		margin-bottom: 12px;
+	}
+
+	.viewer {
+		width: 100px;
+		height: auto;
+		align-content: center;
+	}
 </style>
+
 <body>
-  
-  <!-- !PAGE CONTENT! -->
-  <div class="w3-content" style="max-width:1500px">
-  
-  <!-- Header -->
-  <div class="w3-opacity"> 
-  <div class="w3-clear"></div>
-  <header class="w3-center w3-margin-bottom">
-		<br><br>
-	<h1><b>SnapScape</b></h1>
-	<p><b>A collection of little wonders worth appreciating.</b></p>
-</header>
-  </div>
-	
-	<hr class="w3-opacity" style="border-width: 3px">
 
-  <!-- Photo Grid -->
-  <div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
-  
-	<div class="w3-third">
-	  <img src="img9.jpg" style="width:100%">
-	  <img src="img13.jpg" style="width:100%">
-	  <img src="img16.jpg" style="width:100%">
-	  <img src="img8.jpg" style="width:100%">
-	  <img src="img10.jpg" style="width:100%">
-	  <img src="img4.jpg" style="width:100%">
-	  <img src="img15.jpg" style="width:100%">
+	<!-- !PAGE CONTENT! -->
+	<div class="w3-content" style="max-width:1500px">
+
+		<!-- Header -->
+		<div class="w3-opacity">
+			<div class="w3-clear"></div>
+			<header class="w3-center w3-margin-bottom">
+				<br>
+				<br>
+				<h1>
+					<b>SnapScape</b>
+				</h1>
+				<p>
+					<b>A collection of little wonders worth appreciating.</b>
+				</p>
+			</header>
+		</div>
+
+		<hr class="w3-opacity" style="border-width: 3px">
+
+		<!-- Photo Grid -->
+		<div class="w3-row-padding" id="myGrid" style="margin-bottom:128px">
+
+			<div class="w3-third">
+				<img src="img9.jpg" style="width:100%" class="hover-opacity">
+				<img src="img13.jpg" style="width:100%" class="hover-opacity">
+				<img src="img16.jpg" style="width:100%" class="hover-opacity">
+				<img src="img8.jpg" style="width:100%" class="hover-opacity">
+				<img src="img10.jpg" style="width:100%" class="hover-opacity">
+				<img src="img4.jpg" style="width:100%" class="hover-opacity">
+				<img src="img15.jpg" style="width:100%" class="hover-opacity">
+			</div>
+
+			<div class="w3-third">
+				<img src="img14.jpg" style="width:100%" class="hover-opacity">
+				<img src="img2.jpg" style="width:100%" class="hover-opacity">
+				<img src="img19.jpg" style="width:100%" class="hover-opacity">
+				<img src="img11.jpg" style="width:100%" class="hover-opacity">
+				<img src="img18.jpg" style="width:100%" class="hover-opacity">
+				<img src="img3.jpg" style="width:100%" class="hover-opacity">
+				<img src="img5.jpg" style="width:100%" class="hover-opacity">
+			</div>
+
+			<div class="w3-third">
+				<img src="img17.jpg" style="width:100%" class="hover-opacity">
+				<img src="img12.jpg" style="width:100%" class="hover-opacity">
+				<img src="img1.jpg" style="width:100%" class="hover-opacity">
+				<img src="img6.jpg" style="width:100%" class="hover-opacity">
+				<img src="img7.jpg" style="width:100%" class="hover-opacity">
+				<img src="img20.jpg" style="width:100%" class="hover-opacity">
+			</div>
+		</div>
+
+		<!-- End Page Content -->
 	</div>
 
-	<div class="w3-third">
-	  <img src="img14.jpg" style="width:100%">
-	  <img src="img2.jpg" style="width:100%">
-	  <img src="img19.jpg" style="width:100%">
-	  <img src="img11.jpg" style="width:100%">
-	  <img src="img18.jpg" style="width:100%">
-	  <img src="img3.jpg" style="width:100%">
-	  <img src="img5.jpg" style="width:100%">
-	</div>
-  
-	<div class="w3-third">
-	  <img src="img17.jpg" style="width:100%">
-	  <img src="img12.jpg" style="width:100%">
-	  <img src="img1.jpg" style="width:100%">
-	  <img src="img6.jpg" style="width:100%">
-		<img src="img7.jpg" style="width:100%">
-		<img src="img20.jpg" style="width: 100%">
-	</div>
-  </div>
-  
-  <!-- End Page Content -->
-  </div>
-  
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
-	<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  </footer>
-   
-  <script>
-  // Toggle grid padding
-  // function myFunction() {
-	//   var x = document.getElementById("myGrid");
-	//   if (x.className === "w3-row") {
-	// 	  x.className = "w3-row-padding";
-	//   } else { 
-	// 	  x.className = x.className.replace("w3-row-padding", "w3-row");
-	//   }
-  // }
-  </script>
-  
-  </body>
-  </html>
-  
+	<!-- Footer -->
+	<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px">
+		<p class="w3-medium">Powered by
+			<a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a>
+		</p>
+	</footer>
+
+	<script>
+	</script>
+
+</body>
+
+</html>
