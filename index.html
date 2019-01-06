@@ -5,6 +5,7 @@
   <title>Mitali's Projects</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="src/img/icon.jpg">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,11 +27,12 @@
     }
 
     .projects img {
+      background-color: white;
       position: absolute;
       width: 100%;
       height: 100%;
       opacity: 0.60;
-      object-fit:contain;
+      object-fit: contain;
     }
 
     .hover-opacity:hover {
@@ -42,7 +44,7 @@
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
-  <!-- Sidebar/menu -->
+  <!-- Sidebar/menu 
   <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar">
     <br>
     <div class="w3-container">
@@ -63,8 +65,8 @@
         <i class="fa fa-user fa-fw w3-margin-right"></i>About</a>
       <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal">
         <i class="fa fa-envelope fa-fw w3-margin-right"></i>Contact</a>
-    </div>
-    <!--
+    </div>-->
+  <!--
   <div class="w3-panel w3-large">
     <i class="fa fa-facebook-official hover-opacity"></i>
     <i class="fa fa-instagram hover-opacity"></i>
@@ -76,22 +78,19 @@
 -->
   </nav>
 
-  <!-- Overlay effect when opening sidebar on small screens -->
+  <!-- Overlay effect when opening sidebar on small screens 
   <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-    id="myOverlay"></div>
+    id="myOverlay"></div>-->
 
   <!-- !PAGE CONTENT! -->
-  <div class="w3-main" style="margin-left:300px">
+  <div class="w3-main">
 
     <!-- Header -->
     <header id="portfolio">
-      <a href="#">
-        <img src="src/img/icon.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large hover-opacity">
-      </a>
-      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
-        <i class="fa fa-bars"></i>
-      </span>
       <div class="w3-container">
+        <a href="github.com/mchow101">
+          <img src="src/img/icon.jpg" style="width:65px;" class="w3-circle w3-right w3-margin hover-opacity">
+        </a>
         <h1>
           <b>My Projects</b>
         </h1>
@@ -107,7 +106,7 @@
       </div>
     </header>
 
-    <!-- First Photo Grid -->
+    <!-- First Grid -->
     <div class="w3-row-padding">
       <div class="w3-third w3-container w3-margin-bottom">
         <a href="index.html">
@@ -125,7 +124,7 @@
         </div>
       </div>
       <div class="w3-third w3-container w3-margin-bottom">
-        <a href="http://www.breakerbotsdev.com">
+        <a href="http://www.breakerbots.com">
           <div class="projects">
             <img src="src/img/breakerbots.PNG" alt="5104 Logo" style="width:100%" class="hover-opacity">
           </div>
@@ -152,7 +151,50 @@
       </div>
     </div>
 
-    <!-- Second Photo Grid -->
+    <!-- Second Grid -->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://github.com/mchow101/dynamic-time-warping">
+          <div class="projects">
+            <img src="src/img/dtw.PNG" alt="DTW" style="width:100%" class="hover-opacity">
+          </div>
+          <div class="w3-container w3-white">
+            <p>
+              <b>Dynamic Time Warping</a>
+        </b>
+        </p>
+        <p>K-means clustering of time series using dynamic time warping.</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <a href="http://www.bkpa.org">
+          <div class="projects">
+            <img src="src/img/BKPALogo.PNG" alt="BKPA Logo" style="width:100%" class="hover-opacity">
+          </div>
+          <div class="w3-container w3-white">
+            <p>
+              <b>BKPA Website</a>
+        </b>
+        </p>
+        <p>The website for the Bengali Kids of Princeton Area.</p>
+        </div>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://github.com/BreakerBots">
+          <div class="projects">
+            <img src="src/img/newicon.png" alt="BreakerBots" style="width:100%;" class="hover-opacity">
+          </div>
+          <div class="w3-container w3-white">
+            <p>
+              <b>BreakerBots</a>
+        </b>
+        </p>
+        <p>Java code for various robots and robotics projects.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Grid -->
     <div class="w3-row-padding">
       <div class="w3-third w3-container w3-margin-bottom">
         <a href="http://www.github.com/mchow101/apcs-final-project">
