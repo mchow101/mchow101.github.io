@@ -6,12 +6,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="src/img/icon.jpg">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="src/css/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
+    body {
+      background: #005B76;
+    }
+
+    p {
+      color: #ADCAD6;
+      font-size: 18px;
+    }
+
+    h1 {
+      color: #005B76;
+      font-size: 10vw;
+      font-family: "Oxygen", sans-serif;
+      margin-left: 7%;
+    }
+
+    h4 {
+      color: #43BCCD;
+      font-family: "Oxygen", sans-serif;
+      font-weight: bold;
+      font-size: 32px;
+    }
+
+    .header {
+      background: #43BCCD;
+      margin: 0 0 2% 0;
+    }
+
     body,
-    h1,
     h2,
     h3,
     h4,
@@ -20,25 +48,40 @@
       font-family: "Raleway", sans-serif
     }
 
+    .projects-container {
+      border-left: 5px solid #43BCCD;
+      margin-left: 12%;
+      margin-top: -2%;
+    }
+    
+    hr {
+      border: 2px solid #43BCCD;
+      margin-top: -2%;
+      margin-left: 12%;
+      margin-right: 4%;
+    }
+
     .projects {
       position: relative;
-      height: 250px;
+      height: 300px;
       overflow: hidden;
+      margin: 4%;
     }
 
     .projects img {
-      background-color: white;
+      background-color: #005B76;
       position: absolute;
       width: 100%;
       height: 100%;
-      opacity: 0.60;
-      object-fit: contain;
+      object-fit: cover;
+      opacity: .5;
     }
 
     .hover-opacity:hover {
-      object-fit: cover;
-      opacity: 1
+      object-fit: contain;
+      opacity:1;
     }
+
   </style>
 </head>
 
@@ -87,12 +130,14 @@
 
     <!-- Header -->
     <header id="portfolio">
-      <div class="w3-container">
-        <a href="github.com/mchow101">
+      <div class="w3-container header">
+        <!--a href="github.com/mchow101">
           <img src="src/img/icon.jpg" style="width:65px;" class="w3-circle w3-right w3-margin hover-opacity">
-        </a>
+        </a-->
         <h1>
-          <b>My Projects</b>
+          <b>Mitali's
+            <br>Coding
+            <br>Projects</b>
         </h1>
         <!--
     <div class="w3-section w3-bottombar w3-padding-16">
@@ -106,138 +151,134 @@
       </div>
     </header>
 
-    <!-- First Grid -->
-    <div class="w3-row-padding">
-      <div class="w3-third w3-container w3-margin-bottom">
+<!--
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="about">
+        <h4>
+          <b>About Me</b>
+        </h4>
+        <p>I am a High School Student and the Programming Lead on FRC Team 5104. I have experience mainly in Java, Python, HTML,
+          CSS, and JavaScript.</p>
+  </div>-->
+
+    <div class="projects-container w3-row-padding">
+      <div class="w3-container w3-margin-bottom">
         <a href="index.html">
           <div class="projects">
             <img src="src/img/thissite.PNG" alt="Screenshot" style="width:100%" class="hover-opacity">
           </div>
         </a>
-        <div class="w3-container w3-white">
-          <p>
-            <b>
-              <a href="index.html">This website!</a>
-            </b>
-          </p>
+        <div class="w3-container">
+          <h4>
+            This website!
+          </h4>
           <p>A collection of major projects and fun experiments.</p>
         </div>
       </div>
-      <div class="w3-third w3-container w3-margin-bottom">
+    </div>
+    <div class="projects-container w3-row-padding">
+      <div class="w3-container w3-margin-bottom">
         <a href="http://www.breakerbots.com">
           <div class="projects">
             <img src="src/img/breakerbots.PNG" alt="5104 Logo" style="width:100%" class="hover-opacity">
           </div>
-          <div class="w3-container w3-white">
-            <p>
-              <b>BreakerSite</a>
-        </b>
-        </p>
-        <p>The team website for FRC 5104, the BreakerBots.</p>
+        </a>
+        <div class="w3-container">
+          <h4>BreakerSite</h4>
+          <p>The team website for FRC 5104, the BreakerBots.</p>
         </div>
       </div>
-      <div class="w3-third w3-container w3-margin-bottom">
+    </div>
+    <div class="projects-container w3-row-padding">
+      <div class="w3-container w3-margin-bottom">
         <a href="src/SnapScape/SnapScape.html">
           <div class="projects">
             <img src="src/SnapScape/img1.jpg" alt="Photo" style="width:100%;" class="hover-opacity">
           </div>
-          <div class="w3-container w3-white">
-            <p>
-              <b>SnapScape</a>
-        </b>
-        </p>
-        <p>A personal photography blog.</p>
+        </a>
+        <div class="w3-container w3-white">
+          <h4>SnapScape</h4>
+          <p>A personal photography blog.</p>
         </div>
       </div>
     </div>
-
-    <!-- Second Grid -->
-    <div class="w3-row-padding">
-      <div class="w3-third w3-container w3-margin-bottom">
+    <div class="projects-container w3-row-padding">
+      <div class="w3-container w3-margin-bottom">
         <a href="https://github.com/mchow101/dynamic-time-warping">
           <div class="projects">
             <img src="src/img/dtw.PNG" alt="DTW" style="width:100%" class="hover-opacity">
           </div>
-          <div class="w3-container w3-white">
-            <p>
-              <b>Dynamic Time Warping</a>
-        </b>
-        </p>
-        <p>K-means clustering of time series using dynamic time warping.</p>
+        </a>
+        <div class="w3-container w3-white">
+          <h4>Dynamic Time Warping</h4>
+          <p>K-means clustering of time series using dynamic time warping.</p>
         </div>
       </div>
-      <div class="w3-third w3-container w3-margin-bottom">
+    </div>
+    <div class="projects-container w3-row-padding">
+      <div class="w3-container w3-margin-bottom">
         <a href="http://www.bkpa.org">
           <div class="projects">
             <img src="src/img/BKPALogo.PNG" alt="BKPA Logo" style="width:100%" class="hover-opacity">
           </div>
-          <div class="w3-container w3-white">
-            <p>
-              <b>BKPA Website</a>
-        </b>
-        </p>
-        <p>The website for the Bengali Kids of Princeton Area.</p>
+        </a>
+        <div class="w3-container w3-white">
+          <h4>BKPA Website</h4>
+          <p>The website for the Bengali Kids of Princeton Area.</p>
         </div>
       </div>
-      <div class="w3-third w3-container w3-margin-bottom">
+    </div>
+    <div class="projects-container w3-row-padding">
+      <div class="w3-container w3-margin-bottom">
         <a href="https://github.com/BreakerBots">
           <div class="projects">
             <img src="src/img/newicon.png" alt="BreakerBots" style="width:100%;" class="hover-opacity">
           </div>
-          <div class="w3-container w3-white">
-            <p>
-              <b>BreakerBots</a>
-        </b>
-        </p>
-        <p>Java code for various robots and robotics projects.</p>
+        </a>
+        <div class="w3-container w3-white">
+          <h4>BreakerBots</h4>
+          <p>Java code for various robots and robotics projects.</p>
         </div>
       </div>
     </div>
-
-    <!-- Third Grid -->
-    <div class="w3-row-padding">
-      <div class="w3-third w3-container w3-margin-bottom">
+    <div class="projects-container w3-row-padding">
+      <div class="w3-container w3-margin-bottom">
         <a href="http://www.github.com/mchow101/apcs-final-project">
           <div class="projects">
             <img src="src/img/superfungame.PNG" alt="Super Fun Game" style="width:100%" class="hover-opacity">
           </div>
-          <div class="w3-container w3-white">
-            <p>
-              <b>
-                <a href="http://www.github.com/mchow101/apcs-final-project">Super Fun Game</a>
-              </b>
-            </p>
-            <p>The final project for APCS, a culmination of skills learned in the class.</p>
-          </div>
+        </a>
+        <div class="w3-container w3-white">
+          <h4>Super Fun Game</h4>
+          <p>The final project for APCS, a culmination of skills learned in the class.</p>
+        </div>
       </div>
-      <div class="w3-third w3-container w3-margin-bottom">
+    </div>
+    <div class="projects-container w3-row-padding">
+      <div class="w3-container w3-margin-bottom">
         <a href="src/DiceGame/DiceGame.html">
           <div class="projects">
             <img src="src/img/dice.PNG" alt="Dice" style="width:100%" class="hover-opacity">
           </div>
-          <div class="w3-container w3-white">
-            <p>
-              <b>Bengali Dice Game</a>
-        </b>
-        </p>
-        <p>A simple number game intended for educational purposes.</p>
+        </a>
+        <div class="w3-container w3-white">
+          <h4>Bengali Dice Game</h4>
+          <p>A simple number game intended for educational purposes.</p>
         </div>
       </div>
-      <div class="w3-third w3-container">
+    </div>
+    <div class="projects-container w3-row-padding">
+      <div class="w3-container">
+        <a href="http://www.github.com/mchow101/MarchMadness2018"></a>
         <div class="projects">
           <img src="src/img/march.PNG" alt="March Madness" style="width:100%" class="hover-opacity">
         </div>
+        </a>
         <div class="w3-container w3-white">
-          <p>
-            <b>
-              <a href="http://www.github.com/mchow101/MarchMadness2018">March Madness</a>
-            </b>
-          </p>
+          <h4>March Madness</h4>
           <p>A Java program to predict the winners of the March Madness tournament.</p>
         </div>
       </div>
     </div>
-
     <!-- Pagination 
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
@@ -261,14 +302,6 @@
     </div>
   </div>
   -->
-
-    <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="about">
-      <h4>
-        <b>About Me</b>
-      </h4>
-      <p>I am a High School Student and the Programming Lead on FRC Team 5104. I have experience mainly in Java, Python, HTML,
-        CSS, and JavaScript.</p>
-      <hr>
 
       <!-- Progress bars / Skills 
     <h4>Technical Skills</h4>
