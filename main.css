@@ -3,3 +3,156 @@
 	height: 400px;
 	border: solid 1px black;
 }
+
+body {
+	background: #005B76;
+  }
+
+  p {
+	color: #ADCAD6;
+	font-size: 18px;
+  }
+
+  h1 {
+	color: #005B76;
+	font-size: 10vw;
+	font-family: "Oxygen", sans-serif;
+	margin-left: 7%;
+  }
+
+  h4 {
+	color: #43BCCD;
+	font-family: "Oxygen", sans-serif;
+	font-weight: bold;
+	font-size: 32px;
+  }
+
+  .header {
+	background: #43BCCD;
+	margin: 0 0 2% 0;
+  }
+
+  body,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+	font-family: "Raleway", sans-serif
+  }
+
+  hr {
+	border: 2px solid #43BCCD;
+	margin-top: -2%;
+	margin-left: 12%;
+	margin-right: 4%;
+  }
+
+  .projects {
+	position: relative;
+	height: 300px;
+	max-width: 300px;
+	overflow: hidden;
+	margin: 4%;
+  }
+
+  .projects img {
+	background-color: #005B76;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: .5;
+  }
+
+  .hover-opacity:hover {
+	object-fit: contain;
+	opacity: 1;
+  }
+
+  .section {
+    margin: 70px 2% 0% 2%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    background-color: #43BCCD;
+    top: 0;
+    bottom: 0;
+    left: 31px;
+    margin-left: -3px;
+  }
+  
+  /* timeline-container around content */
+  .timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* Add arrows to the timeline-left timeline-container (pointing timeline-right) */
+  .timeline-content::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 43px;
+    width: 0;
+    z-index: 1;
+    left: -13px;
+    border: medium solid #ADCAD6;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #ADCAD6 transparent transparent;
+  }
+  
+  /* The actual content */
+  .timeline-content {
+    color: #ADCAD6;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    padding: 20px 30px;
+    background-color: #005B76;
+    position: relative;
+    border-radius: 30px;
+    border: inherit;
+    border-width: 3px;
+    border-color: inherit
+  }
+
+  .timeline-container {
+    border: medium solid #ADCAD6;
+    border-color: #ADCAD6;
+    border-color: transparent transparent transparent #ADCAD6;
+    border-width: 0px;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+    /* Make sure that all arrows are pointing timeline-leftwards */
+    .timeline-container::before {
+    left: 60px;
+    border: medium solid #ADCAD6;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #ADCAD6 transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .timeline-left::after, .timeline-right::after {
+    left: 19px;
+    }
+    
