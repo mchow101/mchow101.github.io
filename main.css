@@ -4,31 +4,118 @@
 	border: solid 1px black;
 }
 
+header.masthead {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: #222;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+@media (min-width: 1024px) {
+  header.masthead {
+    background-attachment: fixed;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  header.masthead {
+    background-attachment: scroll;
+  }
+}
+
+header.masthead .masthead-img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+header.masthead .masthead-title {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+header.masthead .masthead-subtitle {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+header.masthead .scroll-down {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+header.masthead .scroll-down .btn {
+  font-size: 30px;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  letter-spacing: normal;
+  color: white;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header.masthead .scroll-down .btn:hover {
+  color: rgba(255, 255, 255, 0.5) !important;
+  border-color: rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+header.masthead .scroll-down .btn:focus, header.masthead .scroll-down .btn:active {
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5) !important;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 700px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 body {
-	background: #005B76;
+	background: #704214;
   }
 
   p {
-	color: #ADCAD6;
+	color: #fcf5ef;
 	font-size: 18px;
   }
 
   h1 {
-	color: #005B76;
-	font-size: 10vw;
-	font-family: "Oxygen", sans-serif;
-	margin-left: 7%;
+  color: #fcf5ef;
+  text-align: center;
+  font-size: 5vw;
+  font-family: "Oxygen", sans-serif;
+  margin: 2%;
+  min-width: 50vw;
+  }
+
+  h2 {
+    color: #e28c41;
+    font-weight: bold;
   }
 
   h4 {
-	color: #43BCCD;
+	color: #704214 ;
 	font-family: "Oxygen", sans-serif;
 	font-weight: bold;
 	font-size: 32px;
   }
 
   .header {
-	background: #43BCCD;
+	background: #704214 ;
 	margin: 0 0 2% 0;
   }
 
@@ -42,7 +129,7 @@ body {
   }
 
   hr {
-	border: 2px solid #43BCCD;
+	border: 2px solid #e28c41 ;
 	margin-top: -2%;
 	margin-left: 12%;
 	margin-right: 4%;
@@ -57,7 +144,7 @@ body {
   }
 
   .projects img {
-	background-color: #005B76;
+	background-color: #704214;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -90,7 +177,7 @@ body {
     content: '';
     position: absolute;
     width: 7px;
-    background-color: #43BCCD;
+    background-color: #e28c41 ;
     top: 0;
     bottom: 0;
     left: 31px;
@@ -114,18 +201,18 @@ body {
     width: 0;
     z-index: 1;
     left: -13px;
-    border: medium solid #ADCAD6;
+    border: medium solid #e28c41;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #ADCAD6 transparent transparent;
+    border-color: transparent #e28c41 transparent transparent;
   }
   
   /* The actual content */
   .timeline-content {
-    color: #ADCAD6;
+    color: #fcf5ef;
     font-size: 18px;
     font-family: "Raleway", sans-serif;
     padding: 20px 30px;
-    background-color: #005B76;
+    background-color: #704214;
     position: relative;
     border-radius: 30px;
     border: inherit;
@@ -134,9 +221,9 @@ body {
   }
 
   .timeline-container {
-    border: medium solid #ADCAD6;
-    border-color: #ADCAD6;
-    border-color: transparent transparent transparent #ADCAD6;
+    border: medium solid #e28c41;
+    border-color: #e28c41;
+    border-color: transparent transparent transparent #e28c41;
     border-width: 0px;
     width: 100%;
     padding-left: 70px;
@@ -146,9 +233,9 @@ body {
     /* Make sure that all arrows are pointing timeline-leftwards */
     .timeline-container::before {
     left: 60px;
-    border: medium solid #ADCAD6;
+    border: medium solid #e28c41;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #ADCAD6 transparent transparent;
+    border-color: transparent #e28c41 transparent transparent;
     }
   
     /* Make sure all circles are at the same spot */
