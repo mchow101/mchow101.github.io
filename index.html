@@ -28,9 +28,10 @@
   <div class="w3-main">
 
     <!-- Header -->
-    <header class="masthead" style="background-image: url('src/img/piano.JPG'); display: flex; align-items: center; justify-content: center">
+    <header class="masthead"
+      style="background-image: url('src/img/piano.JPG'); display: flex; align-items: center; justify-content: center">
       <div class="w3-container">
-        <div class="row"style="background-color:rgba(44, 26, 8, .5); justify-content: center;">
+        <div class="row" style="background-color:rgba(44, 26, 8, .5); justify-content: center;">
           <div>
             <h1>Mitali Chowdhury <br>Project Portfolio</h1>
           </div>
@@ -42,11 +43,27 @@
         </a>
       </div>
     </header>
+
+
+    <div class="w3-container w3-padding-large" style="margin-left: 10px" id="about">
+      <h4>
+        <b>About Me</b>
+      </h4>
+      <p>I am an undergraduate student at MIT with interests in the fields of biology, electrical engineering,
+        and computer science. I have experience mainly in Java, Python, HTML, CSS, and JavaScript, and my projects
+        include machine learning, web design, and games. In addition to programming, I have experience with robotics,
+        electronics, and other STEM subjects.</p>
+      <h4>
+        <b>My Projects</b>
+      </h4>
+    </div>
+
     <div class="timeline" id="timeline">
       <div class="timeline-container">
         <div class="timeline-content">
           <h2 class="featurette-heading">This website!</h2>
-          <p class="lead">A collection of major projects and fun experiments.</p>
+          <p class="lead">A collection of my major projects, solo and group, as well as fun experiments.
+            <br><i>Technologies: HTML, CSS, and JavaScript</i></p>
           <a href="index.html">
             <div class="projects">
               <img src="src/img/thissite.PNG" alt="Screenshot" style="width:100%" class="hover-opacity">
@@ -57,20 +74,13 @@
 
       <div class="timeline-container">
         <div class="timeline-content">
-          <h2 class="featurette-heading">Engineering Capstone</h2>
-          <p class="lead">Swarm Robotics independent study project.</p>
-          <a href="https://github.com/mchow101/Engineering-Capstone">
-            <div class="projects">
-              <img src="src/img/timmy.jpg" alt="Screenshot" style="width:100%" class="hover-opacity">
-            </div>
-          </a>
-        </div>
-      </div>
-      
-      <div class="timeline-container">
-        <div class="timeline-content">
           <h2 class="featurette-heading">Distributed Data Analytics Platform</h2>
-          <p class="lead">Detection of mines in sonar images using machine learning techniques and distributed processing.</p>
+          <p class="lead">At the Naval Postgraduate School, I led my student intern team to analyze data from underwater
+            unmanned vehicles. Our project involved extracting image and meta data from sonar files, applying machine
+            learning techniques to identify potential mines, developing a distributed data storage and processing
+            platform, and displaying results for end users. We presented this project at the Data Analytics Summit, and
+            are in the process of publishing our research.
+            <br><i>Technologies: Java, Hadoop, Tomcat, and Python</i></p>
           <a href="https://github.com/mchow101/DiDAP">
             <div class="projects">
               <img src="src/img/sonar.png" alt="Screenshot" style="width:100%" class="hover-opacity">
@@ -81,8 +91,44 @@
 
       <div class="timeline-container">
         <div class="timeline-content">
+          <h2 class="featurette-heading">HomeRoom</h2>
+          <p class="lead">This browser extension won the Attendees' Choice Award at the HackThis HackIllinois virtual
+            hackathon. Our concept combines various productivity features, including todo lists, class reminders,
+            pomodoro timers, and distraction-website blocking, into an easily accessible yet unobtrusive product. The
+            extension is primarily targeted towards students and educators, especially during the period of remote
+            learning caused by the COVID-19 pandemic.
+            <br><i>Technologies: HTML, CSS, JavaScript, and MongoDB</i></p>
+          <a href="https://github.com/mchow101/homeroom">
+            <div class="projects">
+              <img src="src/img/homeroom.png" alt="Screenshot" style="width:100%" class="hover-opacity">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-content">
+          <h2 class="featurette-heading">Engineering Capstone</h2>
+          <p class="lead">Independent study project, where I researched applications of swarm robotics
+            for mapping of accessible spaces. A peer and I prototyped movement, communication, and mapping aspects of a
+            swarm system.
+            <br><i>Technologies: Raspberry Pi, Python, and ROS (Robot Operating System)</i>
+          </p>
+          <a href="https://github.com/mchow101/Engineering-Capstone">
+            <div class="projects">
+              <img src="src/img/timmy.jpg" alt="Screenshot" style="width:100%" class="hover-opacity">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-content">
           <h2 class="featurette-heading">BreakerSite</h2>
-          <p class="lead">The team website for FRC 5104, the BreakerBots.</p>
+          <p class="lead">The team website for FRC 5104, the BreakerBots. My work on the site included designing the
+            public face and maintaining the team's online presence for interested students, sponsors, and other teams to
+            learn about the BreakerBots.
+            <br><i>Technologies: Google Cloud, NodeJS, HTML, CSS, and JavaScript</i></p>
           <a href="http://www.breakerbots.com">
             <div class="projects">
               <img src="src/img/breakerbots.PNG" alt="5104 logo" style="width:100%" class="hover-opacity">
@@ -91,47 +137,56 @@
         </div>
       </div>
 
-        <div class="timeline-container">
-          <div class="timeline-content">
-            <h2 class="featurette-heading">Dynamic Time Warping</h2>
-            <p class="lead">K-means clustering of time series using dynamic time warping.</p>
-            <a href="https://github.com/mchow101/dynamic-time-warping">
-              <div class="projects">
-                <img src="src/img/dtw.PNG" alt="DTW" style="width:100%" class="hover-opacity">
-              </div>
-            </a>
-          </div>
+      <div class="timeline-container">
+        <div class="timeline-content">
+          <h2 class="featurette-heading">Dynamic Time Warping</h2>
+          <p class="lead">For the primary part of this project at the Naval Postgraduate School, I analyzed aircraft
+            flight data to detect potentially hazardous anomalies. I implemented a K-means clustering algorithm of time
+            series with dynamic time warping.
+            <br><i>Technologies: SciKit learn, other Python libraries, and TensorFlow</i></p>
+          <a href="https://github.com/mchow101/dynamic-time-warping">
+            <div class="projects">
+              <img src="src/img/dtw.PNG" alt="DTW" style="width:100%" class="hover-opacity">
+            </div>
+          </a>
         </div>
+      </div>
 
-        <div class="timeline-container">
-          <div class="timeline-content">
-            <h2 class="featurette-heading">BKPA Website</h2>
-            <p class="lead">The website for the Bengali Kids of Princeton Area.</p>
-            <a href="http://www.bkpa.org">
-              <div class="projects">
-                <img src="src/img/BKPALogo.PNG" alt="BKPA Logo" style="width:100%" class="hover-opacity">
-              </div>
-            </a>
-          </div>
+      <div class="timeline-container">
+        <div class="timeline-content">
+          <h2 class="featurette-heading">BKPA Website</h2>
+          <p class="lead">The website for the Bengali Kids of Princeton Area, a 501(c)(3) non-profit organization for
+            which I designed and maintain this site.
+            <br><i>Technologies: HTML, CSS, and JavaScript</i></p>
+          <a href="http://www.bkpa.org">
+            <div class="projects">
+              <img src="src/img/BKPALogo.PNG" alt="BKPA Logo" style="width:100%" class="hover-opacity">
+            </div>
+          </a>
         </div>
+      </div>
 
-        <div class="timeline-container">
-          <div class="timeline-content">
-            <h2 class="featurette-heading">BreakerBots</h2>
-            <p class="lead">Java code for various robots and robotics projects.</p>
-            <a href="https://github.com/BreakerBots">
-              <div class="projects">
-                <img src="src/img/newicon.png" alt="BreakerBots" style="width:100%;" class="hover-opacity">
-              </div>
-            </a>
-          </div>
+      <div class="timeline-container">
+        <div class="timeline-content">
+          <h2 class="featurette-heading">BreakerBots</h2>
+          <p class="lead">As lead programmer for two years, I contributed to the codebase for various competition robots
+            and other robotics projects.
+            <br><i>Technologies: Java with WPILib and FIRST Robotics Competition electronics</i></p>
+          <a href="https://github.com/BreakerBots">
+            <div class="projects">
+              <img src="src/img/newicon.png" alt="BreakerBots" style="width:100%;" class="hover-opacity">
+            </div>
+          </a>
         </div>
+      </div>
 
       <div class="timeline">
         <div class="timeline-container">
           <div class="timeline-content">
             <h2 class="featurette-heading">SnapScape</h2>
-            <p class="lead">A personal photography blog.</p>
+            <p class="lead">A personal photography blog with some of my favorite photos.
+              <br><i>Technologies: HTML, CSS, JavaScript</i>
+            </p>
             <a href="src/SnapScape/SnapScape.html">
               <div class="projects">
                 <img src="src/SnapScape/img1.jpg" alt="Photo" style="width:100%" class="hover-opacity">
@@ -143,7 +198,9 @@
         <div class="timeline-container">
           <div class="timeline-content">
             <h2 class="featurette-heading">Super Fun Game</h2>
-            <p class="lead">The final project for APCS, a culmination of skills learned in the class.</p>
+            <p class="lead">The final project for AP Computer Science A. Featuring a culmination of skills learned in
+              the class, primarily Object-Oriented Programming, as well as JFrame Graphics.
+              <br><i>Technologies: Java</i></p>
             <a href="http://www.github.com/mchow101/apcs-final-project">
               <div class="projects">
                 <img src="src/img/superfungame.PNG" alt="Super Fun Game" style="width:100%" class="hover-opacity">
@@ -155,7 +212,9 @@
         <div class="timeline-container">
           <div class="timeline-content">
             <h2 class="featurette-heading">March Madness</h2>
-            <p class="lead">A Java program to predict the winners of the March Madness tournament.</p>
+            <p class="lead">A Java program to predict the winners of the March Madness tournament for an AP Computer
+              Science A project, including a JFrame display of results.
+              <br><i>Technologies: Java</i></p>
             <a href="http://www.github.com/mchow101/MarchMadness2018">
               <div class="projects">
                 <img src="src/img/march.PNG" alt="March Madness" style="width:100%" class="hover-opacity">
@@ -167,7 +226,9 @@
         <div class="timeline-container">
           <div class="timeline-content">
             <h2 class="featurette-heading">Bengali Dice Game</h2>
-            <p class="lead">A simple number game intended for educational purposes.</p>
+            <p class="lead">A simple number game intended for educational purposes, where the player must enter the
+              number shown in Bengali to earn points.
+              <br><i>Technologies: HTML, CSS, and JavaScript</i></p>
             <a href="src/DiceGame/DiceGame.html">
               <div class="projects">
                 <img src="src/img/dice.PNG" alt="Dice" style="width:100%" class="hover-opacity">
@@ -175,17 +236,10 @@
             </a>
           </div>
         </div>
-
       </div>
     </div>
-    <div class="w3-container w3-padding-large" style="margin-bottom:32px; margin-left: 10px" id="about">
-      <h4>
-        <b>About Me</b>
-      </h4>
-      <p>I am a High School Student and the Programming Lead on FRC Team 5104. I have experience mainly in Java, Python, HTML,
-        CSS, and JavaScript, and my projects include games, web design, and machine learning. In addition to programming, I 
-        have experience with robotics, electronics, and other STEM subjects.</p>
-    </div>
+
+
     <div class="w3-container w3-padding-large w3-grey">
       <h4 id="contact">
         <b>Contact Me</b>
@@ -196,7 +250,7 @@
             <i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i>
           </p>
           <p>
-            <a href="mailto:mitalichowdhury00@gmail.com">mitalichowdhury00 at gmail.com</a>
+            <a href="mailto:mitalichowdhury00@gmail.com">mitalichowdhury00 at gmail dot com</a>
           </p>
         </div>
         <div class="w3-third w3-teal">
@@ -213,12 +267,14 @@
           <p>
             <i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i>
           </p>
-          <p>US</p>
+          <p>MIT</p>
         </div>
       </div>
-      <div class="w3-center w3-padding-24" style="color: #fcf5ef">Built with 
-        <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="hover-opacity">w3.css</a>
-        and 
+
+      <div class="w3-center w3-padding-24 footer">Built with
+        <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+          class="hover-opacity">w3.css</a>
+        and
         <a href="https://getbootstrap.com/">Bootstrap</a>
       </div>
     </div>

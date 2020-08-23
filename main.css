@@ -77,8 +77,7 @@ header.masthead .scroll-down .btn:focus, header.masthead .scroll-down .btn:activ
 
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
-    min-height: 700px;
+    height: 97vh;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -108,9 +107,9 @@ body {
   }
 
   h4 {
-	color: #704214 ;
+	color: #e28c41 ;
 	font-family: "Oxygen", sans-serif;
-	font-weight: bold;
+	font-weight: bolder;
 	font-size: 32px;
   }
 
@@ -243,3 +242,8 @@ body {
     left: 19px;
     }
     
+    .footer {
+      background: #e28c41;
+      border-radius: 10px;
+      color: #704214;
+    }
